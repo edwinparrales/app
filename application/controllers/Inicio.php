@@ -9,9 +9,9 @@ class Inicio extends CI_Controller {
         $this->load->helper('url');
         $this->load->model('Model_Login');
         $this->load->library('session');
-       /* if (!$this->session->userdata('conectado')) {
+        if (!$this->session->userdata('conectado')) {
             redirect(base_url());
-        }*/
+        }
     }
 
     public function index() {

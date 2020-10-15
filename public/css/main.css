@@ -1,9 +1,18 @@
-body{
+html,body{
 	margin: 10px;
+}
+body{
+	background-color: #2aabd2;
+}
+nav{
+	margin: 5px;
+	padding: 5px;
 }
 nav.navbar {
 	background-color: #e3d2d2;
 	color: #0c0c0c;
 }
 
-
+#divInicio {
+	background-color: #e3d2d2;
+}

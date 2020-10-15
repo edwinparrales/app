@@ -9,46 +9,18 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Sgos</title><link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <title>Sgos</title>
 
-
-        
-        <script src="<?php echo base_url('public/js/jquery.min.js') ?> "></script>
-        <?php echo link_tag(base_url() . 'public/css/bootstrap.css'); ?> 
-        <script src="<?php echo base_url('public/js/bootstrap.min.js') ?> "></script>
-        
-         <script src="<?php echo base_url('public/dist/sweetalert.min.js'); ?>"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <?php echo link_tag(base_url() . 'public/css/bootstrap.css'); ?>
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('public/dist/sweetalert.css'); ?>">
-        <script src="<?php echo base_url('public/dist/funciones.js'); ?>"></script>
-        
-        
-     
-        
-        
         <!--data tables-->
-        
         <?php echo link_tag(base_url() . 'public/media/css/dataTables.bootstrap.css'); ?> 
-              
-        <script src="<?php echo base_url('public/media/js/jquery.dataTables.js') ?> "></script>
-        
-        <script src="<?php echo base_url('public/media/js/dataTables.bootstrap.min.js') ?> "></script>
-        <?php echo link_tag('https://cdn.datatables.net/fixedcolumns/3.2.2/css/fixedColumns.dataTables.min.css'); ?> 
-        <script src="https://cdn.datatables.net/fixedcolumns/3.2.2/js/dataTables.fixedColumns.min.js"></script>
-         
-         <!--Select2-->
+         <?php echo link_tag('https://cdn.datatables.net/fixedcolumns/3.2.2/css/fixedColumns.dataTables.min.css'); ?>
+        <!-- Styles Select2-->
          <?php echo link_tag(base_url() . 'public/select2/css/select2-bootstrap.css'); ?> 
-         <?php echo link_tag(base_url() . 'public/select2/css/select2.css'); ?> 
-       
-        <script src="<?php echo base_url('public/select2/js/select2.full.js')?>"></script>
-
-         <script src="<?php echo base_url('public/select2/js/select2.js')?>"></script>
-
-
-
-
-
-		<?php echo link_tag(base_url() . 'public/css/main.css'); ?>
-
+         <?php echo link_tag(base_url() . 'public/select2/css/select2.css'); ?>
+ 		 <?php echo link_tag(base_url() . 'public/css/main.css'); ?>
 	</head>
     <body>
              <?php $this->load->view($nav) ?>
@@ -62,7 +34,6 @@ and open the template in the editor.
         <div>
             <?php $this->load->view($contenido) ?>
         </div>
-
 
         <!-- Modal cambio de  contraseña -->
         <div id="modusuario" class="modal fade" role="dialog">
@@ -123,9 +94,29 @@ and open the template in the editor.
             </div>
 
         </div>
-        
-  
-        
+<!--Fin de la ventana modal cambio de contrasena-->
+
+			 <script src="<?php echo base_url('public/js/jquery.min.js') ?> "></script>
+			 <script src="<?php echo base_url('public/js/bootstrap.min.js') ?> "></script>
+			 <script src="<?php echo base_url('public/media/js/dataTables.bootstrap.js') ?> "></script>
+      <!-- Scripts select2-->
+			 <script src="<?php echo base_url('public/select2/js/select2.full.js')?>"></script>
+
+			 <script src="<?php echo base_url('public/select2/js/select2.js')?>"></script>
+      <!-- Scripts	data tables-->
+			 <script src="<?php echo base_url('public/media/js/jquery.dataTables.js') ?> "></script>
+
+
+      <!--	   -->
+
+
+			 <script src="<?php echo base_url('public/dist/sweetalert.min.js'); ?>"></script>
+       <!--			 -->
+			 <script src="<?php echo base_url('public/media/js/jquery.dataTables.js') ?> "></script>
+<!--	   -->
+			 <script src="https://cdn.datatables.net/fixedcolumns/3.2.2/js/dataTables.fixedColumns.min.js"></script>
+<!--	-->
+			 <script src="<?php echo base_url('public/media/js/dataTables.bootstrap.min.js') ?> "></script>
 
 
     </body>
