@@ -1,4 +1,4 @@
-<div class="container">
+<div class="">
 
     <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-inverse " role="navigation"  >

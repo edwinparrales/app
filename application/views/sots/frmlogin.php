@@ -10,10 +10,7 @@
         <link href="<?php echo base_url('public/css/simple-sidebar.css') ?> " rel="stylesheet">
         <link href="<?php echo base_url('public/css/bootstrap.min.css') ?> " rel="stylesheet">
 		<link href="<?php echo base_url('public/jquery-ui/jquery-ui.css') ?> " rel="stylesheet">
-        <script src="<?php echo base_url('public/jquery-ui/jquery-ui.js') ?>"></script>
-        <script src="<?php echo base_url('public/js/bootstrap.min.js') ?> "></script>
-        <script src="<?php echo base_url('public/js/jquery.min.js') ?> "></script>
-        <script src="<?php echo base_url('public/js/jquery-1.10.2.min.js') ?> "></script>
+
       </head>
 <body>
 
@@ -69,7 +66,10 @@
     </div>
 
 
-
+	<script src="<?php echo base_url('public/jquery-ui/jquery-ui.js') ?>"></script>
+	<script src="<?php echo base_url('public/js/bootstrap.min.js') ?> "></script>
+	<script src="<?php echo base_url('public/js/jquery.min.js') ?> "></script>
+	<script src="<?php echo base_url('public/js/jquery-1.10.2.min.js') ?> "></script>
 
 
 </body>

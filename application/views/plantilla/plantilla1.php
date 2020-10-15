@@ -43,14 +43,14 @@ and open the template in the editor.
 
          <script src="<?php echo base_url('public/select2/js/select2.js')?>"></script>
 
-         
-         
-         
-         
-         
 
-    </head>
-    <body id="body" >
+
+
+
+		<?php echo link_tag(base_url() . 'public/css/main.css'); ?>
+
+	</head>
+    <body>
              <?php $this->load->view($nav) ?>
 
         <br>
