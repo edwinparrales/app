@@ -156,7 +156,7 @@ class Cot extends CI_Controller {
         }
     }
     public function listcmbClient() {
-        $q=$this->input->get('q');  
+        $q=$this->input->get('q');
     
         $json = $this->Model_Cliente->listcmbCli($q);
         echo json_encode($json);

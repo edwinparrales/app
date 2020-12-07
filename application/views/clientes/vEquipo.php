@@ -272,7 +272,7 @@
     function mostrardatos() {
         $("#example").dataTable().fnDestroy();
         $('#example').DataTable({
-          
+
             "ajax": '<?php echo base_url('CequipoCliente/listar') ?>',
             "columns": [
                 {"data": "cons"},
@@ -469,7 +469,7 @@
             allowClear: true,
             placeholder: "Seleccione la marca del equipo.",
             ajax: {
-                url: "http://localhost/demosots/CequipoCliente/cmbMarca",
+                url: "http://localhost/app/CequipoCliente/cmbMarca",
                 dataType: 'json',
                 delay: 250,
                 data: function (params) {
@@ -640,40 +640,9 @@
 
 
         });
-        
 
-
-
-
-
-
-
-
-
-
-   
- 
 
     });
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
 </script>
-
-
-

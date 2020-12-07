@@ -10,17 +10,21 @@ and open the template in the editor.
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Sgos</title>
-
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <?php echo link_tag(base_url() . 'public/css/bootstrap.css'); ?>
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('public/dist/sweetalert.css'); ?>">
         <!--data tables-->
-        <?php echo link_tag(base_url() . 'public/media/css/dataTables.bootstrap.css'); ?> 
-         <?php echo link_tag('https://cdn.datatables.net/fixedcolumns/3.2.2/css/fixedColumns.dataTables.min.css'); ?>
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap.min.css">
+		<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+		<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap.min.js"></script>
         <!-- Styles Select2-->
-         <?php echo link_tag(base_url() . 'public/select2/css/select2-bootstrap.css'); ?> 
-         <?php echo link_tag(base_url() . 'public/select2/css/select2.css'); ?>
+		<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+
  		 <?php echo link_tag(base_url() . 'public/css/main.css'); ?>
+
 	</head>
     <body>
              <?php $this->load->view($nav) ?>
@@ -96,15 +100,12 @@ and open the template in the editor.
         </div>
 <!--Fin de la ventana modal cambio de contrasena-->
 
-			 <script src="<?php echo base_url('public/js/jquery.min.js') ?> "></script>
+
 			 <script src="<?php echo base_url('public/js/bootstrap.min.js') ?> "></script>
 			 <script src="<?php echo base_url('public/media/js/dataTables.bootstrap.js') ?> "></script>
-      <!-- Scripts select2-->
-			 <script src="<?php echo base_url('public/select2/js/select2.full.js')?>"></script>
 
-			 <script src="<?php echo base_url('public/select2/js/select2.js')?>"></script>
-      <!-- Scripts	data tables-->
-			 <script src="<?php echo base_url('public/media/js/jquery.dataTables.js') ?> "></script>
+
+
 
 
       <!--	   -->
@@ -112,11 +113,8 @@ and open the template in the editor.
 
 			 <script src="<?php echo base_url('public/dist/sweetalert.min.js'); ?>"></script>
        <!--			 -->
-			 <script src="<?php echo base_url('public/media/js/jquery.dataTables.js') ?> "></script>
-<!--	   -->
-			 <script src="https://cdn.datatables.net/fixedcolumns/3.2.2/js/dataTables.fixedColumns.min.js"></script>
-<!--	-->
-			 <script src="<?php echo base_url('public/media/js/dataTables.bootstrap.min.js') ?> "></script>
+
+
 
 
     </body>
