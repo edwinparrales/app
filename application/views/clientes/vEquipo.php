@@ -433,7 +433,8 @@
             allowClear: true,
             placeholder: "Digite numero de cedula.",
             ajax: {
-                url: "http://localhost/demosots/cot/listcmbClient",
+                url: "<?php echo base_url('cot/listcmbClient')?>",
+
                 dataType: 'json',
                 delay: 250,
                 data: function (params) {
@@ -469,7 +470,7 @@
             allowClear: true,
             placeholder: "Seleccione la marca del equipo.",
             ajax: {
-                url: "http://localhost/app/CequipoCliente/cmbMarca",
+                url: "<?php echo base_url('CequipoCliente/cmbMarca')?>",
                 dataType: 'json',
                 delay: 250,
                 data: function (params) {
