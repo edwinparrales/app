@@ -150,15 +150,14 @@
                                         <label for="Solicitud">Solicitud:</label>
                                         <textarea class="form-control" id="xsolicitud" name="xsolicitud" placeholder="Solicitud"></textarea>    
                                     </div>
-                                    <div class="form-group">
+
                                         <div class="form-group">
                                             <label>Estado Orden:</label>
                                             <input class="form-control" id="xestado1" name="xestado1" readonly="true">
                                         </div>
-                                        <div>
-                                            <input class="select2-choices" id="xestado" type="text" name="xestado">
+                                        <div class="form-group">
+											<select id="xestado" class="select2-chosen" name="xestado"></select>
                                         </div>
-                                    </div>
 
                                     <div class="form-group">
                                         <label>Usuario:</label>
@@ -292,14 +291,6 @@
 </div>
 
 
-
-
-
-
-
-
-
-
 <script type="text/javascript">
 
     $(document).ready(function () {
@@ -398,7 +389,7 @@
 
 
 
-    function guardar() {
+    function guardar(event) {
         event.preventDefault();
 
         $.ajax({
@@ -509,7 +500,7 @@
 
 
 
-    function actualizar() {
+    function actualizar(event) {
 
         event.preventDefault();
 
@@ -596,7 +587,7 @@
             allowClear: true,
             placeholder: "Digite numero de cedula.",
             ajax: {
-                url: "http://localhost/demosots/cot/listcmbClient",
+                url: "<?php echo base_url('cot/listcmbClient') ?>",
                 dataType: 'json',
                 delay: 250,
                 data: function (params) {
@@ -632,7 +623,7 @@
             allowClear: true,
             placeholder: "Digite el codigo o el nombre del cliente.",
             ajax: {
-                url: "http://localhost/demosots/cot/listcmbClient2",
+                url: "<?php echo base_url('cot/listcmbClient2')?>",
                 dataType: 'json',
                 delay: 250,
                 data: function (params) {
@@ -677,7 +668,7 @@
             allowClear: true,
             placeholder: "Digite el codigo cliente y serial del equipo.",
             ajax: {
-                url: "http://localhost/demosots/cot/listcmbEquipos/"+idcliente,
+                url: "<?php echo base_url('cot/listcmbEquipos/')?>"+idcliente,
                 dataType: 'json',
                 delay: 250,
                 data: function (params) {
@@ -714,7 +705,7 @@
             allowClear: true,
             placeholder: "Digite numero de cedula o apellido.",
             ajax: {
-                url: "http://localhost/demosots/Profesionales/listar2",
+                url: "<?php echo base_url('Profesionales/listar2')?>",
                 dataType: 'json',
                 delay: 250,
                 data: function (params) {
@@ -746,7 +737,7 @@
 
 //metodos relacion equeipos clientes con ordenes de trabajo
 
-    function guardarEqot() {
+    function guardarEqot(event) {
 
         event.preventDefault();
 
@@ -784,7 +775,7 @@
 
 
 //modal para relacionar orden  de trabajo con profesional
-function guardarRprof(){
+function guardarRprof(event){
 event.preventDefault();
 
         $.ajax({
@@ -892,29 +883,15 @@ event.preventDefault();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </script>
 
 <script type="text/javascript">
-    var data = [{id: 'REGISTRADO', text: 'REGISTRADO'}, {id: 'PROCESO', text: 'PROCESO'}, {id: 'FINALIZADO', text: 'FINALIZADO'}];
+    var dataxestado = [{id: 'REGISTRADO', text: 'REGISTRADO'}, {id: 'PROCESO', text: 'PROCESO'}, {id: 'FINALIZADO', text: 'FINALIZADO'}];
 
     $("#xestado").select2({
         allowClear: true,
         placeholder: "Seleccione estado",
-        data: data
+        data: dataxestado
     });
       var data = [{id: 'NORMAL', text: 'NORMAL'}, {id: 'MEDIA', text: 'MEDIA'}, {id: 'ALTA', text: 'ALTA'}];
 
@@ -925,15 +902,3 @@ event.preventDefault();
     })
 
 </script>
-
-<!--<script src=" https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>-->
-<script src=" https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js"></script>
-<script src=" //cdn.datatables.net/buttons/1.2.4/js/buttons.flash.min.js"></script>
-<script src=" //cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
-<script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
-<script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
-<script src="//cdn.datatables.net/buttons/1.2.4/js/buttons.html5.min.js"></script>
-<script src="//cdn.datatables.net/buttons/1.2.4/js/buttons.print.min.js"></script>
-<!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">-->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css">
-<!--<script src=" //code.jquery.com/jquery-1.12.4.js"></script>-->
