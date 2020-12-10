@@ -110,7 +110,7 @@
 
         </div>
 
-        <!--            ventana modal editar orden de trabajo-->
+        <!-- Ventana modal editar orden de trabajo-->
 
         <div id="modalupdate" class="modal fade" role="dialog">
             <div class="modal-dialog">

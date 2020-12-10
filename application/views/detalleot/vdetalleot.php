@@ -615,7 +615,7 @@ $("#selectSer").select2({
     allowClear: true,
     placeholder: "Digite el codigo o nombre del servicio.",
     ajax: {
-        url: "http://localhost/demosots/Cservicio/cmbServicios",
+        url: "http://localhost/app/Cservicio/cmbServicios",
         dataType: 'json',
         delay: 250,
         data: function (params) {
@@ -659,7 +659,7 @@ $("#xselectSer").select2({
     allowClear: true,
     placeholder: "Digite el codigo o nombre del servicio.",
     ajax: {
-        url: "http://localhost/demosots/Cservicio/cmbServicios",
+        url: "http://localhost/app/Cservicio/cmbServicios",
         dataType: 'json',
         delay: 250,
         data: function (params) {
@@ -701,7 +701,7 @@ $("#dispositivo").select2({
     allowClear: true,
     placeholder: "Seleccione el tipo de dispositivo de equipo.",
     ajax: {
-        url: "http://localhost/demosots/CequipoCliente/cmbDsp",
+        url: "http://localhost/app/CequipoCliente/cmbDsp",
         dataType: 'json',
         delay: 250,
         data: function (params) {
@@ -738,7 +738,7 @@ $("#xdispositivo").select2({
     allowClear: true,
     placeholder: "Seleccione el tipo de dispositivo de equipo.",
     ajax: {
-        url: "http://localhost/demosots/CequipoCliente/cmbDsp",
+        url: "http://localhost/app/CequipoCliente/cmbDsp",
         dataType: 'json',
         delay: 250,
         data: function (params) {
@@ -781,7 +781,7 @@ $("#marca").select2({
     allowClear: true,
     placeholder: "Seleccione la marca del equipo.",
     ajax: {
-        url: "http://localhost/demosots/CequipoCliente/cmbMarca",
+        url: "http://localhost/app/CequipoCliente/cmbMarca",
         dataType: 'json',
         delay: 250,
         data: function (params) {
@@ -817,7 +817,7 @@ $("#xmarca").select2({
     allowClear: true,
     placeholder: "Seleccione la marca del equipo.",
     ajax: {
-        url: "http://localhost/demosots/CequipoCliente/cmbMarca",
+        url: "http://localhost/app/CequipoCliente/cmbMarca",
         dataType: 'json',
         delay: 250,
         data: function (params) {
@@ -851,7 +851,7 @@ $("#proveedor").select2({
     allowClear: true,
     placeholder: "Ingrese el nit o el nombre del proveedor",
     ajax: {
-        url: "http://localhost/demosots/Cproveedor/cmbProveedor",
+        url: "http://localhost/app/Cproveedor/cmbProveedor",
         dataType: 'json',
         delay: 250,
         data: function (params) {
@@ -885,7 +885,7 @@ $("#xproveedor").select2({
     allowClear: true,
     placeholder: "Ingrese el nit o el nombre del proveedor",
     ajax: {
-        url: "http://localhost/demosots/Cproveedor/cmbProveedor",
+        url: "http://localhost/app/Cproveedor/cmbProveedor",
         dataType: 'json',
         delay: 250,
         data: function (params) {
@@ -948,7 +948,7 @@ function mostrardatosDteOt() {
          "scrollY":"300px",
         "scrollCollapse": true,
         "paging":         false,
-        "ajax": "http://localhost/demosots/Cdetalleot/listarDetalleOt",
+        "ajax": "http://localhost/app/Cdetalleot/listarDetalleOt",
         "columns": [
             {"data": "cons"},
             {"data": "id_ot"},
@@ -1023,7 +1023,7 @@ function mostrardatosDteOt() {
    function mostrardatos() {
     $("#tablaAgenda").dataTable().fnDestroy();
     $('#tablaAgenda').DataTable({
-        "ajax": "http://localhost/demosots/Cdetalleot/listar",
+        "ajax": "http://localhost/app/Cdetalleot/listar",
         "columns": [
             {"data": "cons"},
             {"data": "fecha_reg"},
