@@ -149,8 +149,6 @@
             $("#xcodigo").val(" ");
             $("#xmarca").val(" ");
         });
-
-
     });
 
     function mostrardatos() {
@@ -208,7 +206,6 @@
 
     function actualizar() {
         event.preventDefault();
-
         $.ajax({
             url: "<?php echo base_url('Cdispositivo/actualizar') ?>",
             type: "POST",
