@@ -38,7 +38,7 @@
 
 
 
-			<div>
+			<div class="container-fluid">
 				<?php if (!empty($contenido)) {
 					$this->load->view($contenido);
 				} ?>

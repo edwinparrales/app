@@ -6,24 +6,24 @@
 				</ul>
 
 				<div class="tab-content">
-					<div class="tab-pane active" id="tab1">
+					<div class="tab-pane active mt-3" id="tab1">
 						<fieldset>
 							<div class="row">
-								<div class="col-lg-8 col-lg-offset-2">
-									<div class="panel panel-info">
+								<div class="col-12 col-sm-12 col-lg-12">
+									<div class="panel">
 										<div class="panel-heading"><h3 class="panel-title">Registro de orden de trabajo</h3></div>
-										<div class="panel-body" >
+										<div class="panel-body " >
 											<h3 class="panel-title">Datos de la orden</h3><hr>
 											<form method="POST"  id="frmregistrar">
 												<div class="warning" id="msj" style=" font-weight:bold"></div>
 												<div class="form-group">
-													<label for="cliente">Cliente:</label>
-													<select class="js-example-basic-single form-control" name="id_cliente" id="id_cliente">
+													<label for="id_cliente">Cliente:</label>
+													<select class="form-control" name="id_cliente" id="idClienteForm">
 														<option></option>
 													</select>
 												</div>
 												<div class="form-group">
-													<label for="Solicitud">Solicitud:</label>
+													<label for="solicitud">Solicitud:</label>
 													<textarea class="form-control" id="solicitud" name="solicitud" placeholder="Solicitud"></textarea>
 												</div>
 												<div class="form-group">
@@ -41,12 +41,23 @@
 					<div class="tab-pane " id="tab2">
 						<fieldset>
 						<br>
+						<div class="row">
+						   <div class="col-12">
+						
+						      <div class="form-group">
+								 <input class="form-control"  required="true" class="" name="txtbuscar" id="txtbuscar" placeholder="Ingrese numero de ot a buscar" type="number" min=1 >
+								
+							
+						       </div>
+							   <button id="btnbuscarzz" name="btnbuscarzz" class="btn btn-primary">Buscar</button>
+									 <button id="btnreset" name="btnreset" class="btn btn-">Reset</button>
 
-							 <div class="form-group col-lg-3">
-								 <input class="form-control"  required="true" class="" name="txtbuscar" id="txtbuscar" placeholder="Ingrese numero de ot a buscar" type="number">
-									 <button id="btnbuscarzz" name="btnbuscarzz" class="btn btn-default">Buscar</button>
-									 <button id="btnreset" name="btnreset" class="btn btn-default">Reset</button>
-							</div>
+
+						
+						    </div>
+						</div>
+
+
 							<br>
 						<div class="container-fluid" id="datatable">
 
@@ -540,7 +551,7 @@
 		$(document).ready(function () {
 
 
-			$(".js-example-basic-single").select2({
+			$("#idClienteForm").select2({
 				id: function (data) {
 					return data.num_cedula
 				},
